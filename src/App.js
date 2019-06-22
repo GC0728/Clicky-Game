@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Wrapper from "./components/Wrapper";
+import ImagesCard from "./components/ImagesCard";
+import images from "./images.json";
 
-function App() {
+class App extends Component {
+  state = {
+    images
+  };
+
+// Function to toggle images state changes
+
+// Render images
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Wrapper>
+      <h1>Testing</h1>
+      {this.state.images.map(image => (
+        <ImagesCard
+          id={image.id}
+          key={image.id}
+          name={image.name}
+          image={image.image}
+        />
+        ))}
+    </Wrapper>
+  )
+};
+
+
+};
 
 export default App;
