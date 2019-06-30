@@ -2,71 +2,86 @@
 
 {
     "id": 1,
-    "name": "Thor, God of Thunder",
-    "image": "https://vignette.wikia.nocookie.net/thor/images/a/a8/Thor_Vol_3_8_Textless.jpg/revision/latest?cb=20110923093120"
+    "name": "Toon Link",
+    "image": "https://www.ssbwiki.com/images/thumb/5/56/Toon_Link_SSBU.png/250px-Toon_Link_SSBU.png",
+    "clicked": false
 },
 
 {
     "id": 2,
-    "name": "Iron Man",
-    "image": "https://i.ebayimg.com/images/g/vXAAAOSwqxdb2-Xk/s-l300.jpg"
+    "name": "Kirby",
+    "image": "https://www.ssbwiki.com/images/thumb/0/07/Kirby_SSBU.png/250px-Kirby_SSBU.png",
+    "clicked": false
 },
 
 {
     "id": 3,
     "name": "Cloud",
-    "image": "https://www.ssbwiki.com/images/thumb/e/e7/Cloud-Alt1_SSBU.png/250px-Cloud-Alt1_SSBU.png"
+    "image": "https://www.ssbwiki.com/images/thumb/e/e7/Cloud-Alt1_SSBU.png/250px-Cloud-Alt1_SSBU.png",
+    "clicked": false
 },
 
 {
     "id": 4,
     "name": "Marth",
-    "image": "https://www.ssbwiki.com/images/thumb/7/79/Marth_SSB4.png/250px-Marth_SSB4.png"
+    "image": "https://www.ssbwiki.com/images/thumb/7/79/Marth_SSB4.png/250px-Marth_SSB4.png",
+    "clicked": false
 },
 
 {
     "id": 5,
     "name": "King Dedede",
-    "image": "http://smashbros-ultimate.com/images/char/king_dedede.png"
+    "image": "http://smashbros-ultimate.com/images/char/king_dedede.png",
+    "clicked": false
 },
 
 {
     "id": 6,
     "name": "Captain Falcon",
-    "image": "https://vignette.wikia.nocookie.net/ssb/images/e/e3/CaptainFalconSSBWU3DS2.jpg/revision/latest?cb=20140714142225"
+    "image": "https://www.ssbwiki.com/images/thumb/d/da/Captain_Falcon_SSBU.png/250px-Captain_Falcon_SSBU.png",
+    "clicked": false
 },
 
 {
     "id": 7,
-    "name": "Captain Olimar",
-    "image": "https://www.ssbwiki.com/images/thumb/b/b3/Olimar_SSBU.png/250px-Olimar_SSBU.png"
+    "name": "Olimar",
+    "image": "https://www.ssbwiki.com/images/thumb/b/b3/Olimar_SSBU.png/250px-Olimar_SSBU.png",
+    "clicked": false
 },
 
 {
     "id": 8,
     "name": "Mr. Game and Watch",
-    "image": "http://i.imgur.com/vJEogz9.png"
+    "image": "http://i.imgur.com/vJEogz9.png",
+    "clicked": false
 },
 
 {
     "id": 9,
     "name": "Solid Snake",
-    "image": "https://www.ssbwiki.com/images/thumb/d/db/Snake_SSBB.jpg/200px-Snake_SSBB.jpg"
+    "image": "https://www.ssbwiki.com/images/thumb/0/02/Snake_SSBU.png/250px-Snake_SSBU.png",
+    "clicked": false
 },
 
 {
     "id": 10,
-    "image": ""
+    "name": "Gandorf",
+    "image": "https://www.ssbwiki.com/images/thumb/2/23/Ganondorf_SSB4.png/250px-Ganondorf_SSB4.png",
+    "clicked": false
 },
 
 {
     "id": 11,
-    "image": ""
+    "name": "Yoshi",
+    "image": "https://www.ssbwiki.com/images/thumb/2/2a/Yoshi_MP10.png/1200px-Yoshi_MP10.png",
+    "clicked": false
 },
 
 {
     "id": 12,
-    "image": ""
+    "name": "Ice Climbers",
+    "image": "https://vignette.wikia.nocookie.net/nintendo/images/5/50/Super_Smash_Bros._Ultimate_-_Character_Art_-_Ice_Climbers.png/revision/latest/scale-to-width-down/310?cb=20180613015447&path-prefix=en",
+    "clicked": false
 }
 
 ]
