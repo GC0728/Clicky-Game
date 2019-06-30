@@ -15,7 +15,6 @@ function ImagesCard(props) {
                             alt={"Click me I'm " + props.name} 
                             src={props.image}
                             onClick= {() => props.imageClick(props.id)}
-                            id={props.id}
                             />
                             </button>
                         </ul>

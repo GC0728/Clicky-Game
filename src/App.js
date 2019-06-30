@@ -31,7 +31,7 @@ smashShuffle = array => {
     array[imagesIndex] = array[randoImage];
     array[randoImage] = temporaryImage;
   }
-
+  
   return array;
 
 };
@@ -40,27 +40,40 @@ smashShuffle = array => {
 imageClick = id => {
   let clickedSmashCharacter = this.state.images.filter(image => image.id === id)[0];
   console.log(clickedSmashCharacter);
-
-  let checkClick = this.state.images.filter(image => image.clicked === true);
-  console.log(checkClick);
+  let checkClicked = this.state.images.filter(image => image.clicked === true);
+  console.log(checkClicked);
 
   if (!clickedSmashCharacter.clicked) {
-    // this.clickedSmashCharacter.clicked === true;
+    clickedSmashCharacter.clicked = true;
     this.smashShuffle(images);
-    this.setState({ score: this.state.score + 1});
+    this.setState({ 
+      score: this.state.score + 1,
+      bestScore: 
+      this.state.score > this.state.bestScore
+      ? this.state.score
+      : this.state.bestScore
+    });
   }
-};
 
-// Function to alter state of "score" 
-// handleScoreCount = () => {
-//   this.setState({ count: this.state.score + 1});
-// }; 
+  if (this.state.score === 11) {
+    this.setState({
+      score: 0,
+      bestScore: 0
+    })
+
+    checkClicked.forEach(image => {
+      image.clicked = false;
+    })
+  }
+
+
+};
 
 // Render images
 render() {
   return (
     <div className="container">
-      <Header  score={this.state.score} />
+      <Header  score={this.state.score}  bestScore={this.state.bestScore}/>
       <Wrapper>
         {this.state.images.map(image => (
         <ImagesCard

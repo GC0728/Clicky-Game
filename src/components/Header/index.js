@@ -4,17 +4,18 @@ function Header(props) {
     return (
         <div className="jumbotron">
             <span>
-                <h2>
+                <h1>
                     Clicky Game
-                </h2>
-                <h2>
-                    [Message Goes Here]
-                </h2>
+                </h1>
+                <p>
+                    <i>Click each smash character only once! If you click a character twice, then your score resets.
+                    </i>
+                </p>
                 <h2>
                     Score: {props.score} 
                 </h2>
                 <h2>
-                    Top Score: 1
+                    Best Score: {props.bestScore}
                 </h2>
             </span>
         </div>
