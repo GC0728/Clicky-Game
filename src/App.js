@@ -53,19 +53,28 @@ imageClick = id => {
       ? this.state.score
       : this.state.bestScore
     });
+  
+    if (this.state.score === 11) {
+      this.setState({
+        score: 0,
+        bestScore: 0
+      })
+
+      checkClicked.forEach(image => {
+        image.clicked = false;
+      });
+    } 
   }
-
-  if (this.state.score === 11) {
-    this.setState({
-      score: 0,
-      bestScore: 0
-    })
-
+  else {
     checkClicked.forEach(image => {
       image.clicked = false;
-    })
-  }
+    });
 
+    this.smashShuffle(images);
+    this.setState({
+      score: 0,
+    });
+  }
 
 };
 
